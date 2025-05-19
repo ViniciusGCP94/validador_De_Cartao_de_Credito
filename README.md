@@ -27,7 +27,7 @@ Este é um projeto simples de validação de cartões de crédito. Ele permite q
 1. Clone este repositório:
     ```bash
     git clone https://github.com/seu-usuario/validador-cartao.git
-    ```markdown
+    ```
 # Validador de Cartão de Crédito
 
 Este é um projeto simples de validação de cartões de crédito. Ele permite que os usuários insiram o número de um cartão e verifiquem se ele é válido ou não, utilizando o algoritmo de Luhn. O design da interface é moderno, com aparência profissional, inspirado em sistemas bancários.
