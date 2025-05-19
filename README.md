@@ -1,5 +1,7 @@
 # Validador de Cartão de Crédito
 
+![Validador de Cartão de Crédito](./assets/images/Validação-de-Cartão-CAPA.png)
+
 Este é um projeto simples de validação de cartões de crédito. Ele permite que os usuários insiram o número de um cartão e verifiquem se ele é válido ou não, utilizando o algoritmo de Luhn. O design da interface é moderno, com aparência profissional, inspirado em sistemas bancários.
 
 ## Funcionalidades
