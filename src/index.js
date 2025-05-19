@@ -3,7 +3,8 @@ function validarCartao() {
   let numeroCartao = input.value.replace(/\D/g, "");
 
   const bandeiras = {
-    Visa: { prefixos: ["4"], comprimentos: [13, 16, 19] },
+    Visa: { prefixos: ["4"], comprimentos: [13, 19] },
+    VisaElectron: { prefixos: ["4026", "4173", "4508", "4844", "4913"], comprimentos: [16] },
     MasterCard: {
       prefixos: [
         ...Array.from({ length: 5 }, (_, i) => (51 + i).toString()),
@@ -27,7 +28,10 @@ function validarCartao() {
     JCB: {
       prefixos: Array.from({ length: 62 }, (_, i) => (3528 + i).toString()),
       comprimentos: [16, 19]
-    }
+    },
+    Maestro: { prefixos: ["5018", "5020", "5038", "6304", "6759"], comprimentos: [12, 13, 14, 15, 16, 17, 18, 19] },
+    Elo: { prefixos: ["4011", "4312", "4389", "4514", "4576", "4577", "5041", "5067", "5090", "6277", "6362"], comprimentos: [16, 17, 18, 19] },
+    Hipercard: { prefixos: ["606282", "637095", "637599", "637609", "637612", "637613", "637614", "637615", "637616"], comprimentos: [16, 17, 18, 19] }
   };
 
   function luhnCheck(numero) {
